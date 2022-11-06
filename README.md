@@ -27,9 +27,9 @@
 - ## Write a Java method to display the middle character of a string. 
 
 ##### Note:
-a) If the length of the string is odd there will be two middle characters.
+a) If the length of the string is odd there will be one middle characters.
 
-b) If the length of the string is even there will be one middle character.
+b) If the length of the string is even there will be two middle character.
 
 ![middle of string](https://user-images.githubusercontent.com/92606737/200155076-6f03b954-2635-4f65-96c6-268938d94340.PNG)
 
