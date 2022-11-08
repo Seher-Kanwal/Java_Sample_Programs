@@ -1,7 +1,4 @@
 
-##Do it again there is some issue
-
-
 package company.samplepaper;
 import java.util.Scanner;
 
@@ -27,29 +24,40 @@ public class PasswordCheck {
         else {
            
            for(int i = 0; i<a.length();i++){
+               
            char c = a.charAt(i);
            
            // CHECKING AND CALCULATING THE NUMBER OF THE CHARACTERS
-           if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z')){
+           if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'))
+           {
                ch++;
            }
            
            // CHECKING FOR THE DIGITS
-           if(('0' <= c && c <= '9')){
+           else if(('0' <= c && c <= '9')){
             digits++;
+           }
+           else{
+               System.out.println("Not a digit and character just break the loop");
+               break;
            }
            }
         }
           // CHECKING FOR ATLEAST TWO DIGITS
-           if(digits >= 2){
+           if(digits >= 2)
+           {
                
-               // not dealing with speacial characters soo trying to complete the length 
-           if(len == digits + ch){
+            // not dealing with speacial characters soo trying to complete the length 
+              if(len == digits + ch)
+              {
                System.out.println("The password is good to go....");
-           }
+               System.out.println("no of digits is :" + digits);
+               System.out.println("no of charcters is :" + ch);
+               }
            }
            else{
-               System.out.println("YOU MAY HAVE ENTERED SOME INVALID CHARACTERS OR SYMBOLS..");
+               System.out.println("no of digits is :" + digits);
+               System.out.println("no of charcters is :" + ch);
            }
     }
 }
